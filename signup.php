@@ -45,8 +45,8 @@
             <input type="text" name="lastname" value="<?= $lastname ?>" placeholder="Last Name">
             <input type="text" name="username" value="<?= $username ?>" placeholder="Username">
             <input type="emmail" name="email" value="<?= $email ?>" placeholder="Email">
-            <input type="password" name="createpassword" value="<?= $createpassword ?>" placeholder="Create Passowrd">
-            <input type="password" name="confirmpassword" value="<?= $confirmpassword ?>" placeholder="Confirm Passowrd">
+            <input type="password" name="createpassword" value="<?= $createpassword ?>" placeholder="Create Password">
+            <input type="password" name="confirmpassword" value="<?= $confirmpassword ?>" placeholder="Confirm Password">
             <div class="form__control">
                 <label for="avatar">User Avatar</label>
                 <input type="file" name="avatar" id="avatar">
