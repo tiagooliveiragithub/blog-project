@@ -12,18 +12,18 @@ if(isset($_GET['id'])) {
 
 
     // later (put the posts with this category with uncategorized)
+    $update_query = "UPDATE posts SET category_id=6 WHERE category_id=$id";
+    $update_result = mysqli_query($connection, $query);
 
-
-
-    // delete category from db 
-    $delete_category_query = "DELETE FROM categories WHERE id=$id LIMIT 1";
-    $delete_category_result = mysqli_query($connection, $delete_category_query);
-
-    if(mysqli_errno($connection)) {
-        $_SESSION['delete-category'] = "Problem deleting category '{$category['title']}'";
-    } else {
+    if(!mysqli_errno($connection)){
+        // delete category from db 
+        $delete_category_query = "DELETE FROM categories WHERE id=$id LIMIT 1";
+        $delete_category_result = mysqli_query($connection, $delete_category_query);
         $_SESSION['delete-category-success'] = "Category {$category['title']} deleted successfully";
+    } else {
+        $_SESSION['delete-category'] = "Problem deleting category '{$category['title']}'";
     }
+
 }
 
 header('location: ' . ROOT_URL . 'admin/manage-categories.php');

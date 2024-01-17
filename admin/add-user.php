@@ -25,7 +25,6 @@
                     ?>
                 </p>
             </div>
-        
         <?php endif ?>
             <form action="<?php ROOT_URL ?>add-user-logic.php" enctype="multipart/form-data" method="POST">
             <input type="text" name="firstname" value="<?= $firstname?>" placeholder="First Name">
