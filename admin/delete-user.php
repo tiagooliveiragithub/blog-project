@@ -24,7 +24,7 @@ if(isset($_GET['id'])) {
 
 
     // delete user from db 
-    $delete_user_query = "DELETE FROM users WHERE id=$id";
+    $delete_user_query = "DELETE FROM users WHERE id=$id LIMIT 1";
     $delete_user_result = mysqli_query($connection, $delete_user_query);
 
     if(mysqli_errno($connection)) {
