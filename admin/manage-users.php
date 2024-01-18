@@ -55,7 +55,7 @@
                 <li><a href="index.php"><i class="uil uil-pen"></i>
                     <h5>Add Post</h5>
                 </a></li>
-                <li><a href="dashboard.php"><i class="uil uil-postcard"></i>
+                <li><a href="index.php"><i class="uil uil-postcard"></i>
                     <h5>Manage Post</h5>
                 </a></li>
                 <?php if(isset($_SESSION['user_is_admin'])) : ?>
