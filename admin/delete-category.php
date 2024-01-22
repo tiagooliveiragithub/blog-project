@@ -12,7 +12,7 @@ if(isset($_GET['id'])) {
 
 
     // later (put the posts with this category with uncategorized)
-    $update_query = "UPDATE posts SET category_id=6 WHERE category_id=$id";
+    $update_query = "UPDATE posts SET category_id=1 WHERE category_id=$id";
     $update_result = mysqli_query($connection, $query);
 
     if(!mysqli_errno($connection)){

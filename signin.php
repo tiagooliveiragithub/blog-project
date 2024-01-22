@@ -21,7 +21,7 @@
 <body>
 <section class="form__section">
     <div class="container form__section-container">
-        <h2>Sign Up</h2>
+        <h2>Sign In</h2>
         <?php
         if(isset($_SESSION['signup-success'])) : ?>
             <div class="alert__message success">
